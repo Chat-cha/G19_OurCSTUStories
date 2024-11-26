@@ -234,12 +234,13 @@ h3 {
 /*----- Guestbooks -----*/
 .Guest {
     width: 70%;
-    height: 500px;
+    height: 460px;
     background-color: #24211c;
     margin-top: 50px;
     margin-left: 220px;
     align-content: center;
     border-radius: 30px;
+    margin-top: 100px;
     margin-bottom: 200px;
 }
 
@@ -247,20 +248,27 @@ h3 {
     background-color: white;
     width: 2px;
     margin-top: 40px;
-    height: 420px;
+    height: 380px;
     float: left;
     margin-left: 30px;
 }
 
 .book {
-    width: 88%;
-    height: 440px;
-    background-color: #f9eedc;
+    width: 85%;
+    height: 400px;
+    background-color: #f4eadb;
     margin-left: 80px;
     text-align: left;
     border-radius: 30px;
     margin-bottom: 200px;
     padding: 30px;
+    padding-left: 60px;
+}
+
+.post {
+    width: 50%;
+    height: 440px;
+    background-color: #dddddf;
 }
 
 .topic {
@@ -268,13 +276,37 @@ h3 {
     font-weight: 800;
 }
 
+form {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
 /*----- footer -----*/
-footer p {
+footer {
     padding: 20px;
+    text-align: center;
+    height: 180px;
+    background-color: #24211c;
+}
+
+.resp {
     font-size: 15px;
     font-weight: 600;
     text-align: center;
-    height: 100px;
-    background-color: #24211c;
     color: white;
+    margin-bottom: 30px;
+}
+
+.footer ul li {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 400;
+    width: 20%;
+    height: 30px;
+    float: inline-start;
+    margin-left: 50px;
 }
