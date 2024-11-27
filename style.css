@@ -425,3 +425,67 @@ footer {
     background-size: cover;
     position: relative;
 }
+h5 {
+    color: #050505;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+}
+h6{
+    color: #535151;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+}
+.highlight-animate {
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.highlight-animate:hover {
+    background-color: rgb(237, 249, 68);
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+    }
+    50% {
+        text-shadow:  0 0 50px #ffffff;
+    }
+    100% {
+        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+    }
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.glowing-moving-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    animation: glow 2s infinite, slide 2s infinite;
+}
+
+
+
+
+h7 { font-family: "Bungee Spice", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+  
