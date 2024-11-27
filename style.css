@@ -441,14 +441,6 @@ h6{
     padding: 10px;
     text-align: left;
 }
-.highlight-animate {
-    background-color: rgb(255, 255, 255);
-    transition: background-color 0.5s ease-in-out;
-}
-
-.highlight-animate:hover {
-    background-color: rgb(237, 249, 68);
-}
 
 
 @keyframes glow {
@@ -480,12 +472,17 @@ h6{
     animation: glow 2s infinite, slide 2s infinite;
 }
 
-
-
-
 h7 { font-family: "Bungee Spice", sans-serif;
     font-size: 36px;
     font-weight: 600;
     
+}
+.highlight {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 6px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    border-radius: 18px;
 }
   
