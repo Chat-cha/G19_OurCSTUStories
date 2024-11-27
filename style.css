@@ -1,7 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -34,7 +41,6 @@ nav img {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-
 }
 
 .nav-links ul li a {
@@ -51,7 +57,6 @@ nav img {
     display: block;
     margin: auto;
     transition: 0.5s;
-
 }
 
 .nav-links ul li:hover::after {
@@ -66,7 +71,6 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
 }
 
 .text-box h1 {
@@ -187,7 +191,6 @@ h3 {
     .cow {
         flex-direction: column;
     }
-
 }
 
 .course-col {
@@ -231,6 +234,7 @@ h3 {
     background: rgba(222, 240, 247, 0.5);
 }
 
+
 /*----- Guestbooks -----*/
 .Guest {
     width: 60%;
@@ -241,56 +245,41 @@ h3 {
     border-radius: 30px;
     margin-top: 100px;
     margin-bottom: 200px;
+    flex: 1;
+    padding-left: 20px;
 }
 
 @media(max-width: 650px) {
     .Guest {
         width: 50%;
-    }
-
-    .topic {
-        font-size: 30px;
-    }
-
-    form {
-        font-size: 12px;
-
-        padding-left: 10px;
+        padding: 0px;
     }
 }
 
 .line {
     background-color: white;
-    width: 2px;
-    margin-top: 40px;
-    height: 380px;
+    width: 3px;
+
+    height: 340px;
     float: left;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .book {
-    width: 90%;
-    height: 460px;
+    width: 93%;
+    height: 430px;
     background-color: #f4eadb;
     margin-left: 60px;
     text-align: left;
     border-radius: 30px;
     margin-bottom: 50px;
-    padding: 30px;
-    padding-left: 60px;
-
-}
-
-.post {
-    width: 50%;
-    height: 440px;
-    background-color: #dddddf;
+    padding: 20px;
+    padding-left: 40px;
 }
 
 .topic {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
-
 }
 
 form {
@@ -300,9 +289,8 @@ form {
 
 /*----- footer -----*/
 footer {
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-    height: 250px;
     background-color: #322b20;
 }
 
@@ -311,18 +299,16 @@ footer {
     font-weight: 600;
     text-align: center;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .footer ul li {
     display: inline;
-    text-align: center;
     text-decoration: none;
     color: aliceblue;
     font-size: 14px;
     font-weight: 400;
     width: 20%;
-    height: 30px;
     float: inline-start;
     margin-left: 50px;
 }
@@ -330,7 +316,7 @@ footer {
 @media(max-width: 1100px) {
     .resp {
         font-size: 14px;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
     }
 
     .footer ul li {
@@ -338,9 +324,42 @@ footer {
         width: 35%;
         height: 70px;
         margin-left: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         float: left;
     }
+}
+
+/*----- Comments -----*/
+h2 {
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
+
+.comment-box {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.comment-box:last-child {
+    border-bottom: none;
+}
+
+.comment-name {
+    font-weight: bold;
+    color: rgb(255, 221, 195);
+}
+
+.comment-other {
+    font-weight: 200;
+    color: aliceblue;
+}
+
+#downloadBtn {
+    margin-top: 20px;
 }
 
 /*----- Journey -----*/
@@ -359,7 +378,6 @@ footer {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 .timeline {
     margin: 4em auto;
@@ -494,7 +512,6 @@ h6 {
     background-color: rgb(237, 249, 68);
 }
 
-
 @keyframes glow {
     0% {
         text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
@@ -529,9 +546,6 @@ h6 {
     color: rgb(0, 0, 0);
     animation: glow 2s infinite, slide 2s infinite;
 }
-
-
-
 
 h7 {
     font-family: "Bungee Spice", sans-serif;
