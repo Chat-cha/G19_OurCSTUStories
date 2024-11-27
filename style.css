@@ -269,15 +269,16 @@ h3 {
 }
 
 .book {
-    width: 55%;
+    width: 90%;
     height: 460px;
     background-color: #f4eadb;
-    margin-left: 80px;
+    margin-left: 60px;
     text-align: left;
     border-radius: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     padding: 30px;
-    padding-left: 30px;
+    padding-left: 60px;
+
 }
 
 .post {
@@ -289,10 +290,11 @@ h3 {
 .topic {
     font-size: 40px;
     font-weight: 800;
+
 }
 
 form {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
 }
 
