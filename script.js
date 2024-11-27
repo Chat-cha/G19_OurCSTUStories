@@ -7,27 +7,36 @@ function displayComments() {
     comments.forEach(comment => {
         const commentDiv = document.createElement('div');
         commentDiv.classList.add('comment-box');
-        commentDiv.innerHTML = `<p class="comment-name">${comment.name}</p><p>${comment.text}</p>`;
+        commentDiv.innerHTML = `
+            <p class="comment-name">${comment.name}</p>
+            <p class="comment-other"><strong>Age : </strong>${comment.age}</p>
+            <p class="comment-other"><strong>Email : </strong>${comment.email}</p>
+            <p class="comment-other"><strong>Website : </strong><a href="${comment.website}" target="_blank">${comment.website}</a></p>
+            <p class="comment-other"><strong>Feedback : </strong>${comment.feedback}</p>
+        `;
         commentsContainer.appendChild(commentDiv);
     });
 }
 
 // Handle form submission
-document.getElementById('commentForm').addEventListener('submit', function (event) {
+document.getElementById('guestForm').addEventListener('submit', function (event) {
     event.preventDefault();
     const name = document.getElementById('name').value.trim();
-    const comment = document.getElementById('comment').value.trim();
+    const age = document.getElementById('age').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const website = document.getElementById('website').value.trim() || 'N/A';
+    const feedback = document.getElementById('feedback').value.trim();
 
-    if (name && comment) {
-        comments.push({ name, text: comment });
+    if (name && age) {
+        comments.push({ name, age, email, website, feedback });
         displayComments();
-        document.getElementById('commentForm').reset();
+        document.getElementById('guestForm').reset();
     }
 });
 
 // Function to download comments as a .txt file
 document.getElementById('downloadBtn').addEventListener('click', function () {
-    let commentText = comments.map(c => `${c.name}: ${c.text}`).join('\n');
+    let commentText = comments.map(c => `${c.name} : ${c.age} ${c.email} ${c.website} ${c.feedback} `).join('\n');
     const blob = new Blob([commentText], { type: 'text/plain' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
