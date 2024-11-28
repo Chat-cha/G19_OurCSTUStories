@@ -74,7 +74,7 @@ nav img {
 }
 
 .text-box h1 {
-    font-size: 62px;
+    font-size: 69px;
 }
 
 nav .fa {
@@ -514,15 +514,15 @@ h6 {
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+        text-shadow: 0 0 5px #5b5858, 0 0 10px #565353, 0 0 20px #545353, 0 0 30px #5d5a5a;
     }
 
     50% {
-        text-shadow: 0 0 50px #ffffff;
+        text-shadow: 0 0 50px #656464;
     }
 
     100% {
-        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+        text-shadow: 0 0 5px #787878, 0 0 10px #5f5e5e, 0 0 20px #575757, 0 0 30px #535151;
     }
 }
 
@@ -541,7 +541,7 @@ h6 {
 }
 
 .glowing-moving-text {
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: bold;
     color: rgb(0, 0, 0);
     animation: glow 2s infinite, slide 2s infinite;
@@ -553,3 +553,4 @@ h7 {
     font-weight: 600;
 
 }
+
