@@ -1,14 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-}
-
-body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .header {
@@ -41,6 +34,7 @@ nav img {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+
 }
 
 .nav-links ul li a {
@@ -57,6 +51,7 @@ nav img {
     display: block;
     margin: auto;
     transition: 0.5s;
+
 }
 
 .nav-links ul li:hover::after {
@@ -71,10 +66,11 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
 }
 
 .text-box h1 {
-    font-size: 69px;
+    font-size: 62px;
 }
 
 nav .fa {
@@ -191,6 +187,7 @@ h3 {
     .cow {
         flex-direction: column;
     }
+
 }
 
 .course-col {
@@ -234,64 +231,63 @@ h3 {
     background: rgba(222, 240, 247, 0.5);
 }
 
-
 /*----- Guestbooks -----*/
 .Guest {
-    width: 60%;
+    width: 70%;
     height: 460px;
-    background-color: #443721;
-    margin-left: 20%;
+    background-color: #24211c;
+    margin-top: 50px;
+    margin-left: 220px;
     align-content: center;
     border-radius: 30px;
     margin-top: 100px;
     margin-bottom: 200px;
-    flex: 1;
-    padding-left: 20px;
-}
-
-@media(max-width: 650px) {
-    .Guest {
-        width: 50%;
-        padding: 0px;
-    }
 }
 
 .line {
     background-color: white;
-    width: 3px;
-
-    height: 340px;
+    width: 2px;
+    margin-top: 40px;
+    height: 380px;
     float: left;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .book {
-    width: 93%;
-    height: 430px;
+    width: 85%;
+    height: 400px;
     background-color: #f4eadb;
-    margin-left: 60px;
+    margin-left: 80px;
     text-align: left;
     border-radius: 30px;
-    margin-bottom: 50px;
-    padding: 20px;
-    padding-left: 40px;
+    margin-bottom: 200px;
+    padding: 30px;
+    padding-left: 60px;
+}
+
+.post {
+    width: 50%;
+    height: 440px;
+    background-color: #dddddf;
 }
 
 .topic {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 800;
 }
 
 form {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 /*----- footer -----*/
 footer {
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    background-color: #322b20;
+    height: 250px;
+    background-color: #24211c;
 }
 
 .resp {
@@ -299,70 +295,22 @@ footer {
     font-weight: 600;
     text-align: center;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .footer ul li {
     display: inline;
+    text-align: center;
     text-decoration: none;
     color: aliceblue;
     font-size: 14px;
     font-weight: 400;
     width: 20%;
+    height: 30px;
     float: inline-start;
     margin-left: 50px;
 }
 
-@media(max-width: 1100px) {
-    .resp {
-        font-size: 14px;
-        margin-bottom: 30px;
-    }
-
-    .footer ul li {
-        font-size: 10px;
-        width: 35%;
-        height: 70px;
-        margin-left: 50px;
-        margin-bottom: 40px;
-        float: left;
-    }
-}
-
-/*----- Comments -----*/
-h2 {
-    color: white;
-}
-
-textarea {
-    width: 100%;
-    height: 80px;
-}
-
-.comment-box {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.comment-box:last-child {
-    border-bottom: none;
-}
-
-.comment-name {
-    font-weight: bold;
-    color: rgb(255, 221, 195);
-}
-
-.comment-other {
-    font-weight: 200;
-    color: aliceblue;
-}
-
-#downloadBtn {
-    margin-top: 20px;
-}
-
-/*----- Journey -----*/
 .Jheader {
     min-height: 100vh;
     width: 100%;
@@ -371,109 +319,102 @@ textarea {
     background-size: cover;
     position: relative;
 }
-
 * {
     font-family: "Maitree", serif;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 
 .timeline {
-    margin: 4em auto;
-    position: relative;
-    max-width: 46em;
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
 }
-
 .timeline:before {
-    background-color: black;
-    content: '';
-    margin-left: -1px;
-    position: absolute;
-    top: 0;
-    left: 2em;
-    width: 2px;
-    height: 100%;
+  background-color: black;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 2px;
+  height: 100%;
 }
 
 .timeline-event {
-    position: relative;
+  position: relative;
 }
-
 .timeline-event:hover .timeline-event-icon {
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    background-color: #f44336;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #f44336;
 }
-
 .timeline-event:hover .timeline-event-thumbnail {
-    -moz-box-shadow: inset 40em 0 0 0 #f44336;
-    -webkit-box-shadow: inset 40em 0 0 0 #f44336;
-    box-shadow: inset 40em 0 0 0 #f44336;
+  -moz-box-shadow: inset 40em 0 0 0 #f44336;
+  -webkit-box-shadow: inset 40em 0 0 0 #f44336;
+  box-shadow: inset 40em 0 0 0 #f44336;
 }
 
 .timeline-event-copy {
-    padding: 2em;
-    position: relative;
-    top: -1.875em;
-    left: 4em;
-    width: 80%;
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
 }
-
 .timeline-event-copy h3 {
-    font-size: 1.75em;
+  font-size: 1.75em;
 }
-
 .timeline-event-copy h4 {
-    font-size: 1.2em;
-    margin-bottom: 1.2em;
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
 }
-
 .timeline-event-copy strong {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
-    padding-bottom: 1.2em;
+  padding-bottom: 1.2em;
 }
 
 .timeline-event-icon {
-    -moz-transition: -moz-transform 0.2s ease-in;
-    -o-transition: -o-transform 0.2s ease-in;
-    -webkit-transition: -webkit-transform 0.2s ease-in;
-    transition: transform 0.2s ease-in;
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: black;
-    outline: 10px solid white;
-    display: block;
-    margin: 0.5em 0.5em 0.5em -0.5em;
-    position: absolute;
-    top: 0;
-    left: 2em;
-    width: 1em;
-    height: 1em;
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: black;
+  outline: 10px solid white;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
 }
 
 .timeline-event-thumbnail {
-    -moz-transition: box-shadow 0.5s ease-in 0.1s;
-    -o-transition: box-shadow 0.5s ease-in 0.1s;
-    -webkit-transition: box-shadow 0.5s ease-in;
-
-    transition: box-shadow 0.5s ease-in 0.1s;
-    color: white;
-    font-size: 0.75em;
-    background-color: black;
-    -moz-box-shadow: inset 0 0 0 0em #f44336;
-    -webkit-box-shadow: inset 0 0 0 0em #f44336;
-    box-shadow: inset 0 0 0 0em #f44336;
-    display: inline-block;
-    margin-bottom: 1.2em;
-    padding: 0.25em 1em 0.2em 1em;
+  -moz-transition: box-shadow 0.5s ease-in 0.1s;
+  -o-transition: box-shadow 0.5s ease-in 0.1s;
+  -webkit-transition: box-shadow 0.5s ease-in;
+  -webkit-transition-delay: 0.1s;
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 0.75em;
+  background-color: black;
+  -moz-box-shadow: inset 0 0 0 0em #f44336;
+  -webkit-box-shadow: inset 0 0 0 0em #f44336;
+  box-shadow: inset 0 0 0 0em #f44336;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
 }
 
 .Fheader {
@@ -484,7 +425,6 @@ textarea {
     background-size: cover;
     position: relative;
 }
-
 h5 {
     color: #050505;
     font-size: 14px;
@@ -493,8 +433,7 @@ h5 {
     padding: 10px;
     text-align: left;
 }
-
-h6 {
+h6{
     color: #535151;
     font-size: 14px;
     font-weight: 300;
@@ -503,54 +442,52 @@ h6 {
     text-align: left;
 }
 
-.highlight-animate {
-    background-color: rgb(255, 255, 255);
-    transition: background-color 0.5s ease-in-out;
-}
-
-.highlight-animate:hover {
-    background-color: rgb(237, 249, 68);
-}
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #5b5858, 0 0 10px #565353, 0 0 20px #545353, 0 0 30px #5d5a5a;
+        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
     }
-
     50% {
-        text-shadow: 0 0 50px #656464;
+        text-shadow:  0 0 50px #ffffff;
     }
-
     100% {
-        text-shadow: 0 0 5px #787878, 0 0 10px #5f5e5e, 0 0 20px #575757, 0 0 30px #535151;
+        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
     }
 }
-
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
-
     50% {
         transform: translateX(20px);
     }
-
     100% {
         transform: translateX(0);
     }
 }
-
 .glowing-moving-text {
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: bold;
     color: rgb(0, 0, 0);
     animation: glow 2s infinite, slide 2s infinite;
 }
 
-h7 {
-    font-family: "Bungee Spice", sans-serif;
+h7 { font-family: "Bungee Spice", sans-serif;
     font-size: 36px;
     font-weight: 600;
-
+    
+}
+.highlight {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 6px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    border-radius: 18px;
 }
 
+p img {
+    width: 100%;
+    border-radius: 3%;
+}
+  
