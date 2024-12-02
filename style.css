@@ -42,7 +42,6 @@ nav img {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-
 }
 
 .nav-links ul li a {
@@ -61,7 +60,6 @@ nav img {
     transition: 0.5s;
 }
 
-
 .nav-links ul li:hover::after {
     width: 100%;
 }
@@ -74,7 +72,6 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
 }
 
 .text-box h1 {
@@ -84,6 +81,7 @@ nav img {
 nav .fa {
     display: none;
 }
+
 
 @media(max-width: 700px) {
     .text-box h1 {
@@ -114,6 +112,7 @@ nav .fa {
         cursor: pointer;
     }
 }
+
 
 /*----- course -----*/
 
@@ -212,7 +211,6 @@ h3 {
     .cow {
         flex-direction: column;
     }
-
 }
 
 .course-col {
@@ -256,6 +254,7 @@ h3 {
     background: rgba(222, 240, 247, 0.5);
 }
 
+
 /*----- Guestbooks -----*/
 .Guest {
     width: 70%;
@@ -291,15 +290,12 @@ h3 {
     background-color: rgb(99, 38, 38);
     width: 20%;
     height: 80px;
-
-
 }
 
 .book {
     width: 85%;
     height: 420px;
     background-color: #f4e9e3;
-    /* background-color: #f4eadb;*/
     margin-left: 80px;
     text-align: left;
     border-radius: 30px;
@@ -417,6 +413,7 @@ textarea {
     margin-left: 50px;
 }
 
+
 /*----- Journey -----*/
 .Jheader {
     min-height: 100vh;
@@ -433,7 +430,6 @@ textarea {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 .timeline {
     margin: 4em auto;
@@ -559,7 +555,6 @@ h6 {
     text-align: left;
 }
 
-
 @keyframes glow {
     0% {
         text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
@@ -644,6 +639,4 @@ a:active {
     height: 20px;
     text-align: right;
     margin-bottom: -100px;
-
-
 }
