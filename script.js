@@ -9,10 +9,10 @@ function displayComments() {
         commentDiv.classList.add('comment-box');
         commentDiv.innerHTML = `
             <p class="comment-name">${comment.name}</p>
-            <p class="comment-other"><strong>Age : </strong>${comment.age}</p>
-            <p class="comment-other"><strong>Email : </strong>${comment.email}</p>
-            <p class="comment-other"><strong>Website : </strong><a href="${comment.website}" target="_blank">${comment.website}</a></p>
-            <p class="comment-other"><strong>Feedback : </strong>${comment.feedback}</p>
+            <label class="comment-other"><strong>Age : </strong>${comment.age}</label>
+            <label class="comment-other"><strong>Email : </strong>${comment.email}</label>
+            <label class="comment-other"><strong>Website : </strong><a href="${comment.website}" target="_blank">${comment.website}</a></label>
+            <label class="comment-other"><strong>Feedback : </strong>${comment.feedback}</label>
         `;
         commentsContainer.appendChild(commentDiv);
     });
@@ -27,7 +27,7 @@ document.getElementById('guestForm').addEventListener('submit', function (event)
     const website = document.getElementById('website').value.trim() || 'N/A';
     const feedback = document.getElementById('feedback').value.trim();
 
-    if (name && age) {
+    if (name && age && feedback) {
         comments.push({ name, age, email, website, feedback });
         displayComments();
         document.getElementById('guestForm').reset();
